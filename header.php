@@ -1,7 +1,7 @@
 <?php
-if ( !is_user_logged_in() ) {
-    Header( "location:wp-admin/" );
-}
+//if ( !is_user_logged_in() ) {
+    //Header( "location:wp-admin/" );
+//}
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">

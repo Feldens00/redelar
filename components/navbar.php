@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+<nav class="navbar navbar-expand-md bg-primary navbar-dark" id="menu-navbar">
 	<a class="navbar-brand" href="<?php echo get_site_url(); ?>">
 	  	<?php 
 			$img = Util::getWidget('img-menu');

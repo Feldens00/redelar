@@ -131,7 +131,7 @@
               <div class="col-md-6 col-12 text-left py-md-0 py-5">
                 <p class="text-white"><i class="fas fa-phone-alt"></i> <?php echo get_field('phone-contact'); ?></p>
                 <p class="text-white">
-                  <a href="<?php echo $whats_url ?>" class="text-white">
+                  <a href="<?php echo $whats_url; ?>" class="text-white">
                     <i class="fab fa-whatsapp"></i> 
                     <?php echo get_field('whats-contact'); ?>
                   </a>
@@ -145,6 +145,16 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container-fluid px-0 bg-primary">
+    <div class="col-md-12 text-center">
+      <a href="https://github.com/Feldens00" class="text-white">
+        <p class="m-0 p-0">Artur Feldens</p>
+      </a>
+    </div>
+    <a href="<?php echo $whats_url; ?>" style="position: fixed;z-index: 10;bottom: 2rem;right: 2rem;">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/icons/whats-icone.png" class="img-fluid" width="50px">
+    </a>
   </div>
 <?php endwhile; ?>
 <?php get_footer(); ?>

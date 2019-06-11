@@ -123,6 +123,18 @@ hr {
 	color: #046fb7;
 }
 
+#div-form input {
+	color: white;
+	padding-left: 10px;
+  	padding-right: 10px;
+}
+
+#div-form textarea {
+	color: white;
+	padding-left: 10px;
+  	padding-right: 10px;
+}
+
 ::-webkit-input-placeholder {
    color: white;
    padding-left: 10px;
