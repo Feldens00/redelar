@@ -53,7 +53,7 @@ hr {
 	padding: 10px 20px 10px 20px;
 }
 
-#service, #budget, #about, #contact {
+#service, #budget, #about, #contact, #importance {
 	height: 100vh;
 }
 
@@ -64,11 +64,11 @@ hr {
 	height: 65vh;
 }
 
-#service .btn {
+#service .btn, #budget .btn {
 	border: 1px solid #eaa034;
 }
 
-#service .btn:hover {
+#service .btn:hover,  #budget .btn:hover{
 	background-color: transparent;
 	color: #eaa034;
 	border: 1px solid #eaa034;
@@ -89,7 +89,7 @@ hr {
 	height: 25%;
 	margin-bottom: 10px;
 	background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #7D858C;
 }
 
 #div-form textarea{
@@ -97,13 +97,13 @@ hr {
     height: 90%;
     margin-bottom: 10px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #7D858C;
 }
 
 #div-form .wpcf7-submit {
     padding: 10px 20px 10px 20px;
-    color: #f8f9fa;
-    border: 1px solid #f8f9fa;
+    color: #7D858C;
+    border: 1px solid #7D858C;
 	display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -119,48 +119,48 @@ hr {
 }
 
 #div-form .wpcf7-submit:hover {
-	background-color: white;
-	color: #046fb7;
+	background-color: #7D858C;
+	color: white;
 }
 
 #div-form input {
-	color: white;
+	color: #7D858C;
 	padding-left: 10px;
   	padding-right: 10px;
 }
 
 #div-form textarea {
-	color: white;
+	color: #7D858C;
 	padding-left: 10px;
   	padding-right: 10px;
 }
 
 ::-webkit-input-placeholder {
-   color: white;
+   color: #7D858C;
    padding-left: 10px;
    padding-right: 10px;
 }
 
 :-moz-placeholder {
-   color: white;
+   color: #7D858C;
    padding-left: 10px;
    padding-right: 10px;
 }
 
 ::-moz-placeholder {
-   color: white;  
+   color: #7D858C;  
    padding-left: 10px;
    padding-right: 10px;
 }
 
 :-ms-input-placeholder {  
-   color: white;  
+   color: #7D858C;  
    padding-left: 10px;
    padding-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
-	#service, #budget, #about, #contact {
+	#service, #budget, #about, #contact, #importance {
 		height: auto;
 	}
 

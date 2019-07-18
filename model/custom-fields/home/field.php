@@ -95,6 +95,32 @@ if (function_exists('acf_add_local_field_group')) {
         'required' => 1,
         'maxlength' => 80
       ),
+      // Container de importancia
+      array (
+        'key' => 'title-importance',
+        'label' => 'Título do container de importancia',
+        'name' => 'title-importance',
+        'type' => 'text',
+        'required' => 1,
+        'maxlength' => 80
+      ),
+      array(
+        'key' => 'text-importance',
+        'label' => 'Texto da importancia',
+        'name' => 'text-importance',
+        'type' => 'wysiwyg',
+        'tabs' => 'all',
+        'toolbar' => 'full',
+        'media_upload' => 1,
+      ),
+      array (
+        'key' => 'url-importance',
+        'label' => 'Video da importancia',
+        'name' => 'url-importance',
+        'type' => 'text',
+        'instructions' => 'Inserir link do embed do youtube',
+        'maxlength' => 400,
+      ),
       // Container de orçamento
       array (
         'key' => 'title-budget',
