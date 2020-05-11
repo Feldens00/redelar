@@ -28,7 +28,7 @@
             <h2 class="color-second font-weight-bold"><?php echo get_field('title-service');?></h2>
           </div>
         </div>
-        <div class="row py-md-4 py-3">
+        <div class="row py-md-4 py-3" hidden>
           <div class="col-md-3">
             <img src="<?php echo get_field('icon-service');?>" class="img-fluid" width="125px">
             <p class="text-service text-muted"><?php echo get_field('text-icon-service');?></p>
@@ -44,6 +44,11 @@
           <div class="col-md-3">
             <img src="<?php echo get_field('icon-service-4');?>" class="img-fluid" width="125px">
             <p class="text-service text-muted"><?php echo get_field('text-icon-service-4');?></p>
+          </div>
+        </div>
+        <div class="row py-md-4 py-3">
+          <div class="col-md-12 text-muted">
+            <?php the_field('text-service') ;?>
           </div>
         </div>
         <div class="row">
@@ -72,7 +77,50 @@
                 <?php echo get_field('text-importance');?>
               </div>
               <div class="col-md-6 my-auto">
-                <?php echo get_field('url-importance');?>
+                <div id="accordion" class="myaccordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Video 1
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <?php echo get_field('url-importance');?>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Video 2
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <?php echo get_field('url-importance-2');?>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Video 3
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        <?php echo get_field('url-importance-3');?>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

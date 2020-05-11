@@ -23,6 +23,15 @@ if (function_exists('acf_add_local_field_group')) {
         'required' => 1,
         'maxlength' => 80
       ),
+       array (
+        'key' => 'text-service',
+        'label' => 'Texto do container de serviços',
+        'name' => 'text-service',
+        'type' => 'wysiwyg',
+        'tabs' => 'all',
+        'toolbar' => 'full',
+        'media_upload' => 1,
+      ),
       array (
         'key' => 'icon-service',
         'label' => 'Icone de serviço',
@@ -117,6 +126,22 @@ if (function_exists('acf_add_local_field_group')) {
         'key' => 'url-importance',
         'label' => 'Video da importancia',
         'name' => 'url-importance',
+        'type' => 'text',
+        'instructions' => 'Inserir link do embed do youtube',
+        'maxlength' => 400,
+      ),
+       array (
+        'key' => 'url-importance-2',
+        'label' => 'Video da importancia 2',
+        'name' => 'url-importance-2',
+        'type' => 'text',
+        'instructions' => 'Inserir link do embed do youtube',
+        'maxlength' => 400,
+      ),
+        array (
+        'key' => 'url-importance-3',
+        'label' => 'Video da importancia 3',
+        'name' => 'url-importance-3',
         'type' => 'text',
         'instructions' => 'Inserir link do embed do youtube',
         'maxlength' => 400,
